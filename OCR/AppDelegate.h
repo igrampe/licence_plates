@@ -9,10 +9,12 @@
 #import <UIKit/UIKit.h>
 
 @class VideoCaptureViewController;
+@class VideoHandlerViewController;
 
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
 @property (strong, nonatomic) VideoCaptureViewController *viewController;
+@property (strong, nonatomic) VideoHandlerViewController *handlerViewController;
 
 @end

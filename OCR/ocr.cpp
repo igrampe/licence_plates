@@ -144,7 +144,6 @@ void Ocr::processFrame(cv::Mat &mat, cv::vector<cv::Mat> &candidates, cv::vector
 		}
 		Contours subContours;
 		cv::findContours(mask, subContours, CV_RETR_EXTERNAL, CV_CHAIN_APPROX_NONE);
-		
 		cv::vector<cv::vector<cv::Point> >::iterator itc = subContours.begin();
 		cv::vector<cv::RotatedRect> srects;
 		

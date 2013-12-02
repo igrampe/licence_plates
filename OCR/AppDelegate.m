@@ -8,6 +8,7 @@
 
 #import "AppDelegate.h"
 #import "VideoCaptureViewController.h"
+#import "VideoHandlerViewController.h"
 
 @implementation AppDelegate
 
@@ -16,9 +17,11 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-    self.viewController = [[VideoCaptureViewController alloc] initWithNibName:nil bundle:nil];
+  self.viewController = [[VideoCaptureViewController alloc] initWithNibName:nil bundle:nil];
 	[self.viewController setShowDebugInfo:YES];
 	self.window.rootViewController = self.viewController;
+//	self.handlerViewController = [[VideoHandlerViewController alloc] initWithNibName:nil bundle:nil];
+//	self.window.rootViewController = self.handlerViewController;
     [self.window makeKeyAndVisible];
     return YES;
 }

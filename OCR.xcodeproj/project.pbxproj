@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5307509A17DAD6180074D84F /* VideoHandlerViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 5307509917DAD6180074D84F /* VideoHandlerViewController.mm */; };
+		5307509C17DAD6260074D84F /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5307509B17DAD6260074D84F /* MediaPlayer.framework */; };
+		5307509E17DAD6790074D84F /* movie.mov in Resources */ = {isa = PBXBuildFile; fileRef = 5307509D17DAD6790074D84F /* movie.mov */; };
+		53B5CE291831A78F00921AC7 /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 53B5CE281831A78F00921AC7 /* Accelerate.framework */; };
 		53EB763E17B828A40005E5E4 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 53EB763D17B828A40005E5E4 /* UIKit.framework */; };
 		53EB764017B828A40005E5E4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 53EB763F17B828A40005E5E4 /* Foundation.framework */; };
 		53EB764217B828A40005E5E4 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 53EB764117B828A40005E5E4 /* CoreGraphics.framework */; };
@@ -31,6 +35,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5307509817DAD6180074D84F /* VideoHandlerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VideoHandlerViewController.h; sourceTree = "<group>"; };
+		5307509917DAD6180074D84F /* VideoHandlerViewController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = VideoHandlerViewController.mm; sourceTree = "<group>"; };
+		5307509B17DAD6260074D84F /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
+		5307509D17DAD6790074D84F /* movie.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = movie.mov; sourceTree = "<group>"; };
+		53B5CE281831A78F00921AC7 /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
 		53EB763A17B828A40005E5E4 /* OCR.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OCR.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		53EB763D17B828A40005E5E4 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		53EB763F17B828A40005E5E4 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -209,6 +218,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				53B5CE291831A78F00921AC7 /* Accelerate.framework in Frameworks */,
+				5307509C17DAD6260074D84F /* MediaPlayer.framework in Frameworks */,
 				53EB770B17B82D510005E5E4 /* CoreMedia.framework in Frameworks */,
 				53EB770917B82D380005E5E4 /* QuartzCore.framework in Frameworks */,
 				53EB770517B82D0E0005E5E4 /* CoreVideo.framework in Frameworks */,
@@ -245,6 +256,8 @@
 		53EB763C17B828A40005E5E4 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				53B5CE281831A78F00921AC7 /* Accelerate.framework */,
+				5307509B17DAD6260074D84F /* MediaPlayer.framework */,
 				53EB770A17B82D510005E5E4 /* CoreMedia.framework */,
 				53EB770817B82D380005E5E4 /* QuartzCore.framework */,
 				53EB770417B82D0E0005E5E4 /* CoreVideo.framework */,
@@ -260,6 +273,7 @@
 		53EB764317B828A40005E5E4 /* OCR */ = {
 			isa = PBXGroup;
 			children = (
+				5307509D17DAD6790074D84F /* movie.mov */,
 				53EB771117B83DAD0005E5E4 /* tessdata */,
 				53EB765A17B828E40005E5E4 /* Tesseract */,
 				53EB764C17B828A40005E5E4 /* AppDelegate.h */,
@@ -270,6 +284,8 @@
 				53EB76F517B828FE0005E5E4 /* ocr.h */,
 				53EB770117B82CC20005E5E4 /* VideoCaptureViewController.h */,
 				53EB770217B82CC20005E5E4 /* VideoCaptureViewController.mm */,
+				5307509817DAD6180074D84F /* VideoHandlerViewController.h */,
+				5307509917DAD6180074D84F /* VideoHandlerViewController.mm */,
 				53EB764417B828A40005E5E4 /* Supporting Files */,
 			);
 			path = OCR;
@@ -531,6 +547,7 @@
 				53EB765417B828A40005E5E4 /* Default-568h@2x.png in Resources */,
 				53EB76F317B828E50005E5E4 /* README.md in Resources */,
 				53EB771217B83DAE0005E5E4 /* tessdata in Resources */,
+				5307509E17DAD6790074D84F /* movie.mov in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -546,6 +563,7 @@
 				53EB76F617B828FE0005E5E4 /* ocr.cpp in Sources */,
 				53EB76FB17B82A1D0005E5E4 /* UIImage+OpenCV.mm in Sources */,
 				53EB770317B82CC20005E5E4 /* VideoCaptureViewController.mm in Sources */,
+				5307509A17DAD6180074D84F /* VideoHandlerViewController.mm in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -694,6 +712,7 @@
 				53EB765917B828A40005E5E4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
